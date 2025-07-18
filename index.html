@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TROPA DO SERRÃO</title>
+  <style>
+    :root {
+      --vermelho: #d60000;
+      --preto: #111;
+      --branco: #fff;
+      --footer-height: 60px;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: var(--preto);
+      color: var(--branco);
+      padding-bottom: var(--footer-height); /* Espaço para o footer */
+      box-sizing: border-box;
+    }
+
+    header {
+      background-color: var(--vermelho);
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 48px;
+      margin: 0;
+      color: var(--branco);
+    }
+
+    header p {
+      font-size: 18px;
+      margin-top: 10px;
+    }
+
+    section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      color: var(--vermelho);
+    }
+
+    .ingressos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+      padding: 0 20px;
+    }
+
+    .card {
+      background-color: #222;
+      border: 2px solid var(--vermelho);
+      border-radius: 10px;
+      padding: 20px;
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: var(--branco);
+    }
+
+    .preco {
+      font-size: 24px;
+      margin: 10px 0;
+      color: var(--vermelho);
+    }
+
+    .btn {
+      background-color: var(--vermelho);
+      color: var(--branco);
+      text-decoration: none;
+      padding: 12px 20px;
+      border-radius: 8px;
+      display: inline-block;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #a00000;
+    }
+
+    footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: var(--footer-height);
+      background-color: #000;
+      color: var(--branco);
+      text-align: center;
+      line-height: var(--footer-height);
+      font-size: 14px;
+      box-shadow: 0 -2px 5px rgba(0,0,0,0.5);
+      z-index: 1000;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>TROPA DO SERRÃO</h1>
+    <p>🔥 A festa mais esperada do ano • 12 de Outubro - Gravataí/RS 🔥</p>
+  </header>
+
+  <section>
+    <h2>Garanta seu Ingresso</h2>
+    <div class="ingressos">
+
+      <div class="card">
+        <h3>Lote Promocional</h3>
+        <p class="preco">R$ 20</p>
+        <a href="https://loja.infinitepay.io/tropadoserrao" class="btn" target="_blank">Comprar</a>
+      </div>
+
+      <div class="card">
+        <h3>Pista</h3>
+        <p class="preco">R$ 30</p>
+        <a href="https://app.infinitpay.com.br/pay/seulinkpista" class="btn" target="_blank">Comprar</a>
+      </div>
+
+      <div class="card">
+        <h3>VIP</h3>
+        <p class="preco">R$ 50</p>
+        <a href="https://app.infinitpay.com.br/pay/seulinkvip" class="btn" target="_blank">Comprar</a>
+      </div>
+
+      <div class="card">
+        <h3>Backstage</h3>
+        <p class="preco">R$ 80</p>
+        <a href="https://app.infinitpay.com.br/pay/seulinkbackstage" class="btn" target="_blank">Comprar</a>
+      </div>
+
+      <div class="card">
+        <h3>Camarote</h3>
+        <p class="preco">R$ 100</p>
+        <a href="https://app.infinitpay.com.br/pay/seulinkcamarote" class="btn" target="_blank">Comprar</a>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    © 2025 TROPA DO SERRÃO • Contato: @tropadoserrao • WhatsApp: (51) 99999-9999
+  </footer>
+
+</body>
+</html>
